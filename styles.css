@@ -27,7 +27,7 @@ nav.navbar{
     width: 100%;
     font-size: 1.50em;
     top: 0;
-    transition: 0.4s;
+    transition: font-size 0.4s, height 0.4s;
 }
 
 .navbar-brand{
@@ -38,14 +38,13 @@ nav.navbar{
     width: 90%;
     display: flex;
     justify-content: center;
-    transition: 0.4s;
 }
 
 .nav-link{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.4s;
+    transition: height 0.4s;
 }
 .nav-link:not(:last-child){
     border-right: 1px solid;
