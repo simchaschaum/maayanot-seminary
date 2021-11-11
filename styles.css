@@ -32,13 +32,13 @@ nav.navbar{
     transition: 0.4s;
     max-width: 5em;
 }
-@media (max-width: 974px){
+@media (max-width: 991px){
     .navbar-brand{
         max-width: 100px;
         transition: 0.4s;
     }
 }
-@media (min-width:975px){
+@media (min-width:992px){
     #navbar-text{
         width: 90%;
         display: flex;
