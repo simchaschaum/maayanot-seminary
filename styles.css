@@ -30,6 +30,7 @@ nav.navbar{
 }
 .navbar-brand{
     transition: 0.4s;
+    max-width: 5em;
 }
 @media (max-width: 974px){
     .navbar-brand{
