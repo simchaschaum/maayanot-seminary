@@ -1,5 +1,5 @@
-const navbar = document.querySelector('.navbar');
-const brand = document.querySelector(".navbar-brand");
+const navbar = document.querySelector('nav');
+const brand = document.querySelector("#navbar-logo");
 const navLink = document.querySelectorAll(".nav-link");
 
 let width = window.innerWidth
@@ -12,23 +12,22 @@ window.onscroll = function(){
 
 function scrollFunction(){
     if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
-        navbar.style.fontSize = "1.25em";
-        navbar.style.height = "60px";
         if(width>975){
             navLink.forEach(item => {
                 item.style.height = "30px"
             });
             brand.style.width = "2em";
-        } else {
-            brand.style.width = "1.5em";
-        }
-
+            navbar.style.height = "60px";
+            navbar.style.fontSize = "1.25em";
+        } 
     } else {
-        navbar.style.fontSize = "1.50em";
-        navbar.style.height = "125px";
-        brand.style.width = "5em";
-        navLink.forEach(item => {
-            item.style.height = "52px"
-        })
+        if(width>975){
+            navLink.forEach(item => {
+                item.style.height = "52px"
+            });
+            brand.style.width = "5em";
+            navbar.style.height = "125px";
+            navbar.style.fontSize = "1.50em";
+        }
     }
 }
