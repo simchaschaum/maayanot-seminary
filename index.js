@@ -16,7 +16,7 @@ function scrollFunction(){
             navLink.forEach(item => {
                 item.style.height = "30px"
             });
-            brand.style.width = "2em";
+            brand.style.width = "7em";
             navbar.style.height = "60px";
             navbar.style.fontSize = "1.25em";
         } 
@@ -25,7 +25,7 @@ function scrollFunction(){
             navLink.forEach(item => {
                 item.style.height = "52px"
             });
-            brand.style.width = "5em";
+            brand.style.width = "10em";
             navbar.style.height = "125px";
             navbar.style.fontSize = "1.50em";
         }

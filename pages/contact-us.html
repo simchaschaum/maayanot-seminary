@@ -16,7 +16,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">
-              <img id="navbar-logo" src="../pictures/8122551761583400157-128.png" alt="random placeholder logo">
+            <img id="navbar-logo" src="../pictures/logo - purple.JPG" alt="Maayanot logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-text" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -61,31 +61,31 @@
           <h1>Contact Us</h1>
           <h3>We'd Love to Hear from You!</h3>
           <div id="contact-us-form">
-            <form class="container">
+            <form class="container"  action="https://formspree.io/f/xrgrnqva" method="POST">
               <div class="row">
                 <div class="mb-3 col">
-                  <label for="exampleInputEmail1" class="form-label">First Name</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <label for="firstName" class="form-label">First Name (required)</label>
+                  <input type="text" name="firstName" class="form-control" id="firstName" aria-describedby="emailHelp" required>
                 </div>
                 <div class="mb-3 col">
-                  <label for="exampleInputPassword1" class="form-label">Last Name</label>
-                  <input type="text" class="form-control" id="exampleInputPassword1">
+                  <label for="lastName" class="form-label">Last Name (required)</label>
+                  <input type="text" name="lastName"class="form-control" id="lastName" required>
                 </div>
               </div>
               <div class="row">
                 <div class="mb-3 col">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <label for="exampleInputEmail1" class="form-label">Email (required)</label>
+                  <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                 </div>
                 <div class="mb-3 col">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" name="phone" class="form-control" id="phone">
                 </div>
               </div>
               <div class="row">
                 <div class="col">
-                  <label for="exampleInputPassword1" class="form-label">Your Message</label>
-                  <textarea type="text" class="form-control" id="exampleInputPassword1"></textarea>
+                  <label for="message" class="form-label">Your Message (required)</label>
+                  <textarea type="text" name="message" class="form-control" id="message" required></textarea>
                 </div>
               </div>
               <div class="row"> 
@@ -94,18 +94,31 @@
             </form>
             <div>
                 <h5>In Israel:</h5>
-                <p>123 Fake Street <br>Jerusalem, Israel<br>maayanot@maayanot.org  |  02-123-4567 </p>
+                <p>22A Chai Taib Street <br>Har Nof, Jerusalem<br>maayanot@maayanot.org  |  972-2-652-9390</p>
                 <h5>In the USA:</h5>
-                <p>123 Fake Street <br>Teaneck, NJ<br>  212-123-4567 </p>
+                <p>c/o Englesohn <br>471 Palmer Avenue<br>Teaneck, NJ<br>646-402-1646 | 917-722-5609</p>
             </div>
           </div>
         </section>
         <section id="map-social-section"> 
           <div>
-            Social media here
+            <h3>Keep In Touch!</h3>
+            <div id="social-logos">
+              <a href="https://www.facebook.com">
+                <img src="../pictures/facebook.svg" alt="facebook">
+              </a>
+              <a href="https://www.twitter.com">
+                <img src="../pictures/twitter.svg" alt="twitter">
+              </a>
+              <a href="https://www.instagram.com">
+                <img src="../pictures/instagram.svg" alt="instagram">
+              </a>
+              <a href="https://www.youtube.com">
+                <img src="../pictures/youtube.svg" alt="youtube">
+              </a>
+            </div>
           </div>
-          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3394.1397337575154!2d34.99695711448823!3d31.712077744825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502c383a84be98f%3A0x22d26c8b69ff0560!2sNachal%20Dolev%20St%2041%2C%20Beit%20Shemesh!5e0!3m2!1sen!2sil!4v1636572869116!5m2!1sen!2sil"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
+          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3391.4195325990618!2d35.17202751438389!3d31.78631434534292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502d7aa63c51f39%3A0x4d5883cc670654e6!2sHaRav%20Yizhak%20Hai%20Taib%20St%2022%2C%20Jerusalem!5e0!3m2!1sen!2sil!4v1636959178306!5m2!1sen!2sil" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        </section>
     </div>
     <footer>
       <p>&copy; Maayanot  |  Website by Simcha Schaum</p>
