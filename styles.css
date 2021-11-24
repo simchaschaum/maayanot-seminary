@@ -228,8 +228,9 @@ button[type=submit]{
     background-color: var(--clr-alt);
     color: white;
     text-decoration: none;
-    height: 50px;
-    width: 150px;
+    height: 75px;
+    width: 200px;
+    font-size: 1.75em;
     border-radius: 10px;
     display: flex;
     align-items: center;
