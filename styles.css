@@ -17,8 +17,9 @@
     min-height: 100vh;
 }
 #content-wrap{
+    margin-top: 125px;
     padding-bottom: 125px;
-}
+    background: linear-gradient(#ffffff, #abd8e7 );}
 
 /* Footer */
 footer{
@@ -29,16 +30,20 @@ footer{
     bottom: 0;
     display: flex;
     align-items: center;
-    background-color: var(--clr-main);
+    background-color: var(--clr-sec);
 }
 
 footer p{
     padding: 20px;
+    margin-bottom: 0;
     color: var(--clr-alt)
 }
 
+#maayanot-logo-footer{
+    width: 150px
+}
 footer img{
-    width: 75px;
+    width: 100px;
     margin: 10px;
 }
 
@@ -56,6 +61,7 @@ nav{
 }
 .bg-light{
     background-color: var(--clr-sec) !important;
+    /* background-color: linear-gradient(#66669a, white) !important; */
 }
 .nav-link{
     color: var(--clr-alt) !important
@@ -89,10 +95,10 @@ nav{
 
 /* Sections - general */
 section{
-    min-height: 95vh;
+    min-height: 80vh;
     width: 85%;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -214,4 +220,25 @@ button[type=submit]{
     }
 }
 
-
+/* DONATE */
+#donate-section{
+    text-align: center;
+}
+#donate-section h1{
+    margin-bottom: 25px;
+}
+#donate-section a{
+    background-color: var(--clr-alt);
+    color: white;
+    text-decoration: none;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+#donate-section a:hover{
+    background-color: var(--clr-main);
+}
