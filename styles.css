@@ -15,11 +15,12 @@
 #page-container{
     position: relative;
     min-height: 100vh;
+    background: linear-gradient(#ffffff, #abd8e7 );
 }
 #content-wrap{
     margin-top: 125px;
     padding-bottom: 125px;
-    background: linear-gradient(#ffffff, #abd8e7 );}
+}
 
 /* Footer */
 footer{
@@ -239,4 +240,18 @@ button[type=submit]{
 }
 #donate-section a:hover{
     background-color: var(--clr-main);
+}
+
+/* DORM LIFE */
+#dorm-life-section h1{
+    margin: 25px
+}
+#dorm-life-section>div{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+#dorm-life-section>div>div{
+    width: 100%;
+    padding: 2.5%
 }
