@@ -126,7 +126,7 @@ button[type=submit]{
 }
 .btn-primary{
     background-color: var(--clr-main);
-    color: var(--clr-sec);
+    color: white;
     border: none;
 }
 .btn-primary:hover{
