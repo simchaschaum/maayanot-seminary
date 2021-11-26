@@ -1,4 +1,4 @@
-const navbar = document.querySelector('nav');
+const navbar = document.querySelector('.navbar');
 const brand = document.querySelector("#navbar-logo");
 const navLink = document.querySelectorAll(".nav-link");
 

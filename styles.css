@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap');
 *{
     box-sizing: border-box;
     padding: none;
-    font-family: 'Public Sans', sans-serif;
+    /* font-family: 'Public Sans', sans-serif; */
+    font-family: 'Cormorant Garamond', serif;
     color: var(--clr-main)
 }
 
@@ -15,11 +17,14 @@
 #page-container{
     position: relative;
     min-height: 100vh;
+    height: auto;
+    width: 100%;
     background: linear-gradient(#ffffff, #abd8e7 );
 }
 #content-wrap{
     margin-top: 125px;
     padding-bottom: 125px;
+    height: auto;
 }
 
 /* Footer */
@@ -56,27 +61,32 @@ footer img{
 }
 nav{
     position: fixed !important;
-    transition: font-size 0.4s, height 0.4s;
+    transition: font-size 0.2s, height 0.2s;
     top: 0;
     width: 100%;
+    box-shadow: 0 0 5px var(--clr-alt);
 }
 .bg-light{
     background-color: var(--clr-sec) !important;
     /* background-color: linear-gradient(#66669a, white) !important; */
 }
 .nav-link{
-    color: var(--clr-alt) !important
+    color: var(--clr-alt) !important;
+    font-weight: bold;
+}
+.nav-link:first-of-type{
+    min-width: 140px;
 }
 #navbar-logo{
     transition: 0.4s;
     max-width: 10em;
 }
+nav{
+    height: 125px;
+    padding: 10px;
+    font-size: 1.50em;
+}
 @media (min-width:992px){
-    nav{
-        height: 125px;
-        padding: 10px;
-        font-size: 1.50em;
-    }
     #navbar-text{
         width: 90%;
         display: flex;
@@ -108,7 +118,46 @@ section{
 section:first-of-type{
     margin-top: 50px;
 }
+/* Home */
+#intro{
+    width: 100%;
+    background-image: url('./pictures/Har_nof.jpg') ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#intro-cover{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom,  rgba(255, 255, 255, 1) 0%, rgba(233, 233, 233, 0.1) 100%); 
+}
+@media (max-width: 1075px) {
+    #intro-cover{
+        background: linear-gradient(to bottom,  rgba(255, 255, 255, 1) 0%, rgba(233, 233, 233, 0.6) 100%); 
+    }
+}
+#intro-cover>div{
+    margin: 5% 10%
+}
+#intro h2{
+    font-size: 4em;
+}
 
+#intro-details>div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#intro-details>div>div:last-of-type{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+}
+#intro-details>div{
+    width: 90%;
+    height: 250px;
+}
 /* Contact Us */
 #contact-us-form{
     display: flex;
@@ -242,16 +291,20 @@ button[type=submit]{
     background-color: var(--clr-main);
 }
 
-/* DORM LIFE */
-#dorm-life-section h1{
+/* DORM LIFE, SPECIAL PROGRAMMING/ TIYULIM  */
+
+#dorm-life-section h1,
+#special-prog-section h1{
     margin: 25px
 }
-#dorm-life-section>div{
+#dorm-life-section>div,
+#special-prog-section>div{
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     display: flex;
 }
-#dorm-life-section>div>div{
+#dorm-life-section>div>div,
+#special-prog-section>div>div{
     width: 100%;
     padding: 2.5%
 }
