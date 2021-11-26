@@ -26,6 +26,19 @@
     padding-bottom: 125px;
     height: auto;
 }
+/* Font-sizes */
+h1{
+    font-size: 3.5em;
+}
+h3{
+    font-size: 2.5em;
+}
+h4{
+    font-size: 2em;
+}
+p{
+    font-size: 1.25em;
+}
 
 /* Footer */
 footer{
@@ -307,4 +320,30 @@ button[type=submit]{
 #special-prog-section>div>div{
     width: 100%;
     padding: 2.5%
+}
+
+/* ABOUT US */
+#about h3{
+    margin-bottom: 10%;
+}
+#about-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.about-container-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+.about-container-row:nth-of-type(2){
+    flex-direction: row-reverse;
+}
+.about-container-row img{
+    border: 1px solid var(--clr-main);
+    width: 300px
+}
+.about-container-text{
+    width: 50%
 }
