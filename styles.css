@@ -58,7 +58,6 @@ footer p{
     margin-bottom: 0;
     color: var(--clr-alt)
 }
-
 #maayanot-logo-footer{
     width: 150px
 }
@@ -66,6 +65,44 @@ footer img{
     width: 100px;
     margin: 10px;
 }
+@media(max-width:768px){
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    footer p{
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        padding: 0;
+        margin-bottom: 0;
+        color: var(--clr-alt);
+        font-size: 15px;
+    }
+    footer img{
+        width: 40px
+    }
+ 
+    footer img:nth-of-type(1){
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    footer img:nth-of-type(2){
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3
+    }
+    footer img:nth-of-type(3){
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3
+    }
+}
+
 
 
 /* Navbar */
@@ -122,7 +159,7 @@ nav{
 section{
     min-height: 80vh;
     width: 85%;
-    margin: 0 auto;
+    margin: 0 auto 5% auto;
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
@@ -374,6 +411,19 @@ button[type=submit]{
 }
 .about-container-text{
     width: 50%
+}
+@media (max-width:768px) {
+    .about-container-row,
+    .about-container-row:nth-of-type(2){
+        flex-direction: column;
+    }
+    .about-container-row img{
+        border: 1px solid var(--clr-main);
+        width: 100%
+    }
+    .about-container-text{
+        width: 100%
+    }
 }
 #about-anchor{
     margin-top: -60px;
