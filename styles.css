@@ -69,6 +69,7 @@ footer img{
     footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 150px;
     }
     footer p{
         grid-column-start: 3;
@@ -136,17 +137,7 @@ nav{
     padding: 10px;
     font-size: 1.50em;
 }
-.nav-shrink{
-    height: 60px;
-    font-size: 1.25em;
-}
-.nav-shrink nav-link{
-    height: 20px;
-    transition: height 0.4s;
-}
-.nav-shrink #navbar-logo{
-    width: 7em;
-}
+
 @media (min-width:992px){
     nav{
         height: 125px;
@@ -166,18 +157,34 @@ nav{
         border-right: 1px solid;
         padding: 8px 16px !important;
     }
+    .nav-shrink{
+        height: 60px;
+        font-size: 1.25em;
+    }
+    .nav-shrink nav-link{
+        height: 20px;
+        transition: height 0.4s;
+    }
+    .nav-shrink #navbar-logo{
+        width: 7em;
+    }
 }   
 
 /* Sections - general */
 section{
     min-height: 80vh;
     width: 85%;
-    margin: 0 auto 5% auto;
+    margin: 0 auto 10% auto;
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+@media(max-width: 768px){
+    section{
+        margin-bottom: 20%;
+    }
 }
 section:first-of-type{
     margin-top: 50px;
@@ -212,6 +219,12 @@ section:first-of-type{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+@media(max-width: 768px){
+    #intro-details>div{
+        display: flex;
+        flex-direction: column;
+    } 
 }
 #intro-details>div>div:last-of-type{
     grid-row-start: 1;
@@ -294,8 +307,17 @@ button[type=submit]{
 }
 
 @media(max-width:768px) {
+    #contact-us h3{
+        text-align: center;
+    }
     #contact-us-form{
         flex-direction: column;
+    }
+    #contact-us-form .row{
+        flex-direction: column;
+    }
+    #contact-us-form .container{
+        width: 95%;
     }
     #map-social-section{
         flex-direction: column-reverse;
@@ -381,11 +403,22 @@ button[type=submit]{
     width: 100%;
     min-height: 500px;
     display: flex;
+    flex-wrap: wrap;
 }
 #dorm-life-section>div>div,
 #special-prog-section>div>div{
+    width: 50%;
+    padding: 2.5%;
+}
+@media(max-width: 768px){
+    #special-prog-section>div,
+    #dorm-life-section>div{
+        flex-direction: column;
+    }
+    #dorm-life-section>div>div,
+    #special-prog-section>div>div{
     width: 100%;
-    padding: 2.5%
+}
 }
 
 /* ABOUT US */
