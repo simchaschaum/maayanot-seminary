@@ -5,7 +5,8 @@
     padding: none;
     /* font-family: 'Public Sans', sans-serif; */
     font-family: 'Cormorant Garamond', serif;
-    color: var(--clr-main)
+    color: var(--clr-main);
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -171,6 +172,20 @@ section:first-of-type{
     width: 90%;
     height: 250px;
 }
+.link-button{
+    font-size: 2em;
+    background-color: var(--clr-main);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 0.25em 0.75em;
+}
+.link-button:hover,
+.link-button:focus{
+    background-color: #615192;
+    color: var(--clr-sec);
+}
 /* Contact Us */
 #contact-us-form{
     display: flex;
@@ -191,7 +206,8 @@ button[type=submit]{
     color: white;
     border: none;
 }
-.btn-primary:hover{
+.btn-primary:hover,
+.btn-primary:focus{
     background-color: #615192;
     color: var(--clr-sec);
 }
@@ -323,9 +339,21 @@ button[type=submit]{
 }
 
 /* ABOUT US */
-#about h3{
-    margin-bottom: 10%;
+#about-intro{
+    width: 100%;
+    background-image: url('./pictures/Har_nof.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: 5%;
 }
+/* #intro-cover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
 #about-container{
     display: flex;
     flex-direction: column;
@@ -346,4 +374,8 @@ button[type=submit]{
 }
 .about-container-text{
     width: 50%
+}
+#about-anchor{
+    margin-top: -60px;
+    padding-bottom: 60px;
 }
