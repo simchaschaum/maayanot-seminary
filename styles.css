@@ -119,8 +119,8 @@ nav{
 }
 .bg-light{
     background-color: var(--clr-sec) !important;
-    /* background-color: linear-gradient(#66669a, white) !important; */
 }
+
 .nav-link{
     color: var(--clr-alt) !important;
     font-weight: bold;
@@ -129,15 +129,28 @@ nav{
     min-width: 140px;
 }
 #navbar-logo{
-    transition: 0.4s;
+    transition: width 0.4s;
     max-width: 10em;
 }
 nav{
-    height: 125px;
     padding: 10px;
     font-size: 1.50em;
 }
+.nav-shrink{
+    height: 60px;
+    font-size: 1.25em;
+}
+.nav-shrink nav-link{
+    height: 20px;
+    transition: height 0.4s;
+}
+.nav-shrink #navbar-logo{
+    width: 7em;
+}
 @media (min-width:992px){
+    nav{
+        height: 125px;
+    }
     #navbar-text{
         width: 90%;
         display: flex;
