@@ -117,6 +117,7 @@ nav{
     top: 0;
     width: 100%;
     box-shadow: 0 0 5px var(--clr-alt);
+    z-index: 100;
 }
 .bg-light{
     background-color: var(--clr-sec) !important;
@@ -214,26 +215,44 @@ section:first-of-type{
 #intro h2{
     font-size: 4em;
 }
-
 #intro-details>div{
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
 @media(max-width: 768px){
     #intro-details>div{
-        display: flex;
         flex-direction: column;
     } 
 }
-#intro-details>div>div:last-of-type{
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 2;
+#intro-details>div>div{
+    position: relative;
+    width: 45%;
+    max-width: 350px;
+    height: 400px;
+    margin: 0 auto 25px auto;
 }
-#intro-details>div{
-    width: 90%;
-    height: 250px;
+@media (max-width:768px) {
+    #intro-details>div>div{
+        width: 100%
+    }
+}
+.intro-details-pic{
+    z-index: -1;
+}
+.intro-details-pic img{
+    max-width: 350px;
+    width: 100%;
+    z-index: -1
+}
+.intro-details-text p{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    font-size: 2em;
 }
 .link-button{
     font-size: 2em;
@@ -431,12 +450,7 @@ button[type=submit]{
     background-size: cover;
     margin-bottom: 5%;
 }
-/* #intro-cover{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
+
 #about-container{
     display: flex;
     flex-direction: column;
@@ -471,7 +485,7 @@ button[type=submit]{
         width: 100%
     }
 }
-#about-anchor{
+.about-anchor{
     margin-top: -60px;
     padding-bottom: 60px;
 }
